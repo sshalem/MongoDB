@@ -1,0 +1,185 @@
+[DEBUG] 2018-06-22 12:38:15.340 [http-nio-8080-exec-2] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 12:38:15.343 [http-nio-8080-exec-2] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-22 12:38:20.907 [http-nio-8080-exec-3] AdminFacade - createCompany() executed for 
+Company [id=2, compName=one, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 12:38:20.907 [http-nio-8080-exec-3] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-22 12:38:24.536 [http-nio-8080-exec-4] AdminFacade - createCompany() executed for 
+Company [id=3, compName=two, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 12:38:24.536 [http-nio-8080-exec-4] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-22 12:38:33.324 [http-nio-8080-exec-5] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-22 12:38:33.349 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-22 12:38:45.087 [http-nio-8080-exec-8] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-22 12:38:48.749 [http-nio-8080-exec-7] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-22 12:38:59.064 [http-nio-8080-exec-10] AdminFacade - createCompany() executed for 
+Company [id=4, compName=bezeq, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 12:38:59.064 [http-nio-8080-exec-10] AdminWebService - createCompany() executed 
+[INFO ] 2018-06-22 12:39:08.509 [http-nio-8080-exec-6] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-22 12:39:12.829 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-22 12:39:13.805 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-22 12:39:18.274 [http-nio-8080-exec-8] AdminFacade - getCompany() executed to get company by Id
+[INFO ] 2018-06-22 12:39:18.275 [http-nio-8080-exec-8] AdminWebService - getCompanyById() executed
+[INFO ] 2018-06-22 12:39:21.565 [http-nio-8080-exec-7] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-22 13:00:43.208 [http-nio-8080-exec-8] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 13:00:43.211 [http-nio-8080-exec-8] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-22 13:00:50.313 [http-nio-8080-exec-10] AdminFacade - createCompany() executed for 
+Company [id=2, compName=bezeq, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 13:00:50.313 [http-nio-8080-exec-10] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-22 13:00:56.729 [http-nio-8080-exec-9] AdminFacade - createCompany() executed for 
+Company [id=3, compName=one, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 13:00:56.729 [http-nio-8080-exec-9] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-22 13:01:01.414 [http-nio-8080-exec-1] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-22 13:01:01.437 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[ERROR] 2018-06-22 13:01:11.933 [http-nio-8080-exec-2] AdminWebService - createCompany() failed ... bezeq  ... already exists... please type another name
+[DEBUG] 2018-06-22 13:01:18.229 [http-nio-8080-exec-4] AdminFacade - createCompany() executed for 
+Company [id=4, compName=two, password=12, email=asml@asml.com]
+[INFO ] 2018-06-22 13:01:18.229 [http-nio-8080-exec-4] AdminWebService - createCompany() executed 
+[INFO ] 2018-06-22 13:01:21.935 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:46:49.003 [http-nio-8080-exec-3] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:46:49.018 [http-nio-8080-exec-3] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:46:57.384 [http-nio-8080-exec-4] AdminFacade - createCompany() executed for 
+Company [id=2, compName=one, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:46:57.385 [http-nio-8080-exec-4] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:47:02.117 [http-nio-8080-exec-5] AdminFacade - createCompany() executed for 
+Company [id=3, compName=two, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:47:02.117 [http-nio-8080-exec-5] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:49:02.765 [http-nio-8080-exec-8] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:49:02.768 [http-nio-8080-exec-8] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:49:06.880 [http-nio-8080-exec-10] AdminFacade - createCompany() executed for 
+Company [id=2, compName=one, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:49:06.880 [http-nio-8080-exec-10] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:49:10.406 [http-nio-8080-exec-1] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:49:10.432 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:12.636 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:49:19.482 [http-nio-8080-exec-2] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:49:19.486 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:21.611 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:49:33.134 [http-nio-8080-exec-7] AdminFacade - createCompany() executed for 
+Company [id=3, compName=two, password=12, email=leumi@leumi.com]
+[INFO ] 2018-06-23 22:49:33.134 [http-nio-8080-exec-7] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:49:35.386 [http-nio-8080-exec-3] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:49:35.391 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:36.307 [http-nio-8080-exec-6] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:37.339 [http-nio-8080-exec-9] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:38.171 [http-nio-8080-exec-8] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:38.963 [http-nio-8080-exec-10] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:39.602 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:40.242 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:49:41.106 [http-nio-8080-exec-2] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:49:41.111 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:43.723 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:44.618 [http-nio-8080-exec-7] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:45.475 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:49:46.314 [http-nio-8080-exec-6] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:49:46.318 [http-nio-8080-exec-6] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:46.915 [http-nio-8080-exec-9] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:47.699 [http-nio-8080-exec-8] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:48.539 [http-nio-8080-exec-10] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:49.370 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:50.083 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:49:50.778 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:49:51.594 [http-nio-8080-exec-5] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:49:51.598 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:56:22.965 [http-nio-8080-exec-8] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:56:22.967 [http-nio-8080-exec-8] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:56:29.331 [http-nio-8080-exec-9] AdminFacade - createCompany() executed for 
+Company [id=2, compName=one, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:56:29.331 [http-nio-8080-exec-9] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:56:32.885 [http-nio-8080-exec-10] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:56:32.907 [http-nio-8080-exec-10] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:56:34.685 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:56:36.123 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:56:37.451 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:56:38.698 [http-nio-8080-exec-4] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:56:38.702 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:56:42.723 [http-nio-8080-exec-7] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:56:44.770 [http-nio-8080-exec-3] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:56:44.774 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:56:57.951 [http-nio-8080-exec-6] AdminFacade - createCompany() executed for 
+Company [id=3, compName=seven, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 22:56:57.951 [http-nio-8080-exec-6] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 22:57:03.082 [http-nio-8080-exec-8] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:57:03.087 [http-nio-8080-exec-8] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:57:04.387 [http-nio-8080-exec-9] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:57:05.714 [http-nio-8080-exec-10] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 22:57:07.051 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 22:57:08.138 [http-nio-8080-exec-2] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 22:57:08.143 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:04.365 [http-nio-8080-exec-8] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 23:11:04.367 [http-nio-8080-exec-8] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 23:11:08.426 [http-nio-8080-exec-10] AdminFacade - createCompany() executed for 
+Company [id=2, compName=one, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 23:11:08.426 [http-nio-8080-exec-10] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 23:11:11.394 [http-nio-8080-exec-9] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:11.409 [http-nio-8080-exec-9] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:13.289 [http-nio-8080-exec-2] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:13.292 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:14.120 [http-nio-8080-exec-1] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:14.124 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:14.722 [http-nio-8080-exec-4] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:14.725 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:15.265 [http-nio-8080-exec-6] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:15.268 [http-nio-8080-exec-6] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:15.696 [http-nio-8080-exec-7] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:15.699 [http-nio-8080-exec-7] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:16.161 [http-nio-8080-exec-3] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:16.164 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:16.657 [http-nio-8080-exec-5] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:16.660 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:17.409 [http-nio-8080-exec-8] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:17.411 [http-nio-8080-exec-8] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:17.592 [http-nio-8080-exec-10] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:17.595 [http-nio-8080-exec-10] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:17.768 [http-nio-8080-exec-9] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:17.771 [http-nio-8080-exec-9] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:17.945 [http-nio-8080-exec-2] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:17.947 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:18.137 [http-nio-8080-exec-1] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:18.140 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:23.852 [http-nio-8080-exec-4] AdminFacade - createCompany() executed for 
+Company [id=3, compName=bezeq, password=12, email=bezeq@bezeq.com]
+[INFO ] 2018-06-23 23:11:23.852 [http-nio-8080-exec-4] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 23:11:27.465 [http-nio-8080-exec-6] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:27.468 [http-nio-8080-exec-6] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:28.208 [http-nio-8080-exec-7] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:28.212 [http-nio-8080-exec-7] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:11:28.833 [http-nio-8080-exec-3] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:11:28.837 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:12:15.720 [http-nio-8080-exec-7] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 23:12:15.722 [http-nio-8080-exec-7] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 23:12:20.514 [http-nio-8080-exec-9] AdminFacade - createCompany() executed for 
+Company [id=2, compName=one, password=12, email=asml@asml.com]
+[INFO ] 2018-06-23 23:12:20.515 [http-nio-8080-exec-9] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-23 23:12:23.348 [http-nio-8080-exec-10] AdminFacade - getAllCompanies() executed 
+[INFO ] 2018-06-23 23:12:23.370 [http-nio-8080-exec-10] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:24.940 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:26.170 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:27.026 [http-nio-8080-exec-6] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:27.826 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:28.546 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:29.138 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:29.706 [http-nio-8080-exec-8] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-23 23:12:38.317 [http-nio-8080-exec-7] AdminFacade - createCompany() executed for 
+Company [id=3, compName=bezeq, password=12, email=bezeq@bezeq.com]
+[INFO ] 2018-06-23 23:12:38.317 [http-nio-8080-exec-7] AdminWebService - createCompany() executed 
+[INFO ] 2018-06-23 23:12:41.547 [http-nio-8080-exec-9] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:42.642 [http-nio-8080-exec-10] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:43.633 [http-nio-8080-exec-1] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:44.314 [http-nio-8080-exec-3] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:44.866 [http-nio-8080-exec-6] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:45.426 [http-nio-8080-exec-4] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:45.986 [http-nio-8080-exec-5] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:46.386 [http-nio-8080-exec-2] AdminWebService - getAllCompanies() executed
+[INFO ] 2018-06-23 23:12:46.714 [http-nio-8080-exec-8] AdminWebService - getAllCompanies() executed
+[DEBUG] 2018-06-24 09:30:06.921 [http-nio-8080-exec-3] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-24 09:30:06.931 [http-nio-8080-exec-3] AdminWebService - createCompany() executed 
+[DEBUG] 2018-06-25 16:27:05.853 [http-nio-8080-exec-5] AdminFacade - createCompany() executed for 
+Company [id=1, compName=asml, password=12, email=asml@asml.com]
+[INFO ] 2018-06-25 16:27:05.864 [http-nio-8080-exec-5] AdminWebService - createCompany() executed 
