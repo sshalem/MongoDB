@@ -1,0 +1,22 @@
+<h1> &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;Purchase Coupon</h1>
+<br>
+<br>
+<form ngNativeValidate class="form-horizontal" style="margin-left: 20px">
+    <div class="form-group">
+        <label for="Title" class="control-label col-sm-2">Enter Coupon Title</label>
+        <div class="col-sm-3">
+            <input class="form-control" placeholder="Title" 
+                    [(ngModel)]="_coupon.title" name="Title"
+                    type="text" id="Title" required=""/>
+        </div>
+    </div>    
+ 
+  
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">           
+            <button (click)="purchaseCoupon()" class="btn btn-warning btn-lg">Purchase Coupon  <span class="glyphicon glyphicon-plus"></span></button>
+        </div>
+    </div>    
+  </form>
+  
+

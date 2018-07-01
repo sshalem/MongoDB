@@ -1,0 +1,25 @@
+.navbar-default{
+    /* margin: 0; */
+    /* background-color: blue; */
+    background: transparent;
+    /* border: none; */
+  }
+  header{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px; 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDTEfgbGVtqkHMXtxMd5LQYHlGuSwbNVJ3Qg7nFER-tOJ6jpG6Q");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+     padding: 15px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  #logout{
+    color: white;
+  }
+  

@@ -1,0 +1,79 @@
+<h1 style="font-size: 70px">List of Coupons</h1>
+<div class="getall">    
+    <button (click)="getAllCoupons()" class="btn btn-primary btn-lg">Get   
+        <span class="glyphicon glyphicon-search"></span></button>            
+</div>
+<br>
+<div class="inputDiv">
+        <input id="searchBox" wvmatInput (keyup)="applyFilter($event.target.value)" placeholder="Search"  />                
+</div>
+<br>
+<div class="results">
+    <div *ngIf="_noResults == true; then noResults else foundResults"></div>
+        <ng-template #noResults><div style="color:red; font-size:25pt">No coupons found</div></ng-template>
+        <ng-template #foundResults><div style="color:navy; font-size:25pt">Found Coupons</div></ng-template>
+</div>
+
+<div class="table">
+    <mat-table [dataSource]="dataSource" matSort matSortActive="id" matSortDirection="asc">        
+            <!-- id column -->
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>ID</mat-header-cell>            
+                <mat-cell *matCellDef="let coupon">{{coupon.id}}</mat-cell>            
+            </ng-container>
+            <!-- title Name column -->
+            <ng-container matColumnDef="title">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>title</mat-header-cell>
+                <mat-cell *matCellDef="let coupon">{{coupon.title}}</mat-cell>
+            </ng-container>
+            <!-- Password column -->
+            <ng-container matColumnDef="startDate">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>startDate</mat-header-cell>
+                <mat-cell *matCellDef="let coupon">{{coupon.startDate | date : "dd/MM/yyyy"}}</mat-cell>
+            </ng-container>
+            <!-- E-mail column -->
+            <ng-container matColumnDef="endDate">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>endDate</mat-header-cell>
+                <mat-cell *matCellDef="let coupon">{{coupon.endDate | date : "dd/MM/yyyy"}}</mat-cell>           
+            </ng-container>
+            <!-- id column -->
+            <ng-container matColumnDef="amount">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>amount</mat-header-cell>            
+                <mat-cell *matCellDef="let coupon">{{coupon.amount}}</mat-cell>            
+            </ng-container>
+            <!-- Company Name column -->
+            <ng-container matColumnDef="type">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>type</mat-header-cell>
+                <mat-cell *matCellDef="let coupon">{{coupon.type}}</mat-cell>
+            </ng-container>
+            <!-- Password column -->
+            <ng-container matColumnDef="price">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>price</mat-header-cell>
+                <mat-cell *matCellDef="let coupon">{{coupon.price  | currency: 'ILS'}}</mat-cell>
+            </ng-container>
+            <!-- E-mail column -->
+            <ng-container matColumnDef="message">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>message</mat-header-cell>
+                <mat-cell *matCellDef="let coupon">{{coupon.message}}</mat-cell>           
+            </ng-container>
+            <!-- E-mail column -->
+            <ng-container matColumnDef="image">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>image</mat-header-cell>
+                <mat-cell *matCellDef="let coupon"><img src="{{coupon.image}}"></mat-cell>           
+            </ng-container>
+           
+            <!-- options Edit/Delete column -->
+            <ng-container matColumnDef="options">
+                    <mat-header-cell *matHeaderCellDef style="font-size: 15px"></mat-header-cell>
+                    <mat-cell *matCellDef="let coupon">
+                            <button (click)="editCoupon(coupon)" class="btn btn-primary btn-sm" routerLink="/updateCoupon" style="width:-20x"><span class="glyphicon glyphicon-pencil"></span>&nbsp;edit &nbsp;</button>
+                            <button (click)="deleteCoupon(coupon.id)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" ></span>&nbsp; Delete</button>                                  
+                    </mat-cell>
+            </ng-container>  
+                   
+        <mat-header-row *matHeaderRowDef="displayedColumns" color="primary"></mat-header-row>
+        <mat-row id="rowHover" *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+    <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 8]" [showFirstLastButtons]="true"></mat-paginator>
+</div>
+

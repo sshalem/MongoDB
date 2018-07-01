@@ -1,0 +1,139 @@
+<h1>Create Coupon</h1>
+<form #createCoupon="ngForm" class="container" ng-controller="MainCtrl">
+  <div class="form-group">                 
+    <label for="Title">Title</label>    
+    <input required
+           pattern="^[a-zA-Z]+[a-zA-Z0-9].*"
+           minlength="1"      
+           ngModel
+           name="Title"  
+           #Title="ngModel"
+           id="Title"
+           type="text"
+           class="form-control" 
+           placeholder="Title" 
+           [(ngModel)]="_coupon.title"/>
+          <div class="alert alert-danger" *ngIf="Title.touched && !Title.valid">
+            <div *ngIf="Title.errors.required">Title is required</div>
+            <div *ngIf="Title.errors.minlength">Title should be minimum {{ Title.errors.minlength.requiredLength }} chararcters</div>
+            <div *ngIf="Title.errors.pattern">Title does not match pattern for example "ad"</div>                       
+          </div>      
+  </div>   
+  <div class="form-group">
+    <label for="startDate" >Start Date</label>          
+    <input required           
+           ngModel
+           name="startDate"  
+           #startDate="ngModel"
+           id="startDate"
+           type="date"
+           class="form-control" 
+           placeholder="startDate" 
+           [(ngModel)]= "_coupon.startDate"/> 
+          <div class="alert alert-danger" *ngIf="startDate.touched && !startDate.valid">
+            <div *ngIf="startDate.errors.required">startDate is required</div>            
+          </div>
+  </div>
+  <div class="form-group">
+    <label for="endDate">End Date</label>       
+    <input required                           
+           ngModel
+           name="endDate"  
+           #endDate="ngModel"
+           id="endDate"
+           type="date"
+           class="form-control" 
+           placeholder="endDate" 
+           [(ngModel)]= "_coupon.endDate"/> 
+          <div class="alert alert-danger" *ngIf="endDate.touched && !endDate.valid">
+            <div *ngIf="endDate.errors.required">endDate is required</div>            
+          </div>
+  </div>
+  <div class="form-group">
+    <label for="amount">Amount</label>    
+    <input required
+           pattern="^[1-9].*"                 
+           ngModel
+           name="amount"  
+           #amount="ngModel"
+           id="amount"
+           type="number"
+           class="form-control" 
+           placeholder="amount" 
+           [(ngModel)]="_coupon.amount"/>
+          <div class="alert alert-danger" *ngIf="amount.touched && !amount.valid">
+            <div *ngIf="amount.errors.required">amount is required</div>            
+            <div *ngIf="amount.errors.pattern">amount does not match pattern for example "one"</div>                       
+          </div>
+  </div>    
+  <div class="form-group">
+        <label for="couponType">Coupon Type</label>
+        <select required
+                ngModel
+                name="couponType"
+                #couponType="ngModel"
+                class="form-control" 
+                placeholder="Coupon Type" 
+                [(ngModel)]="_coupon.type"                  
+                id="couponType">
+                  <option value=""></option>
+                  <option value="RESTURANTS">RESTURANTS</option>
+                  <option value="ELECTRICITY">ELECTRICITY</option>
+                  <option value="FOOD">FOOD</option>
+                  <option value="HEALTH">HEALTH</option>
+                  <option value="SPORTS">SPORTS</option>
+                  <option value="CAMPING">CAMPING</option>
+                  <option value="TRAVELLING">TRAVELLING</option>
+        </select>
+          <div class="alert alert-danger" *ngIf="couponType.touched && !couponType.valid">
+            <div *ngIf="couponType.errors.required">couponType is required</div>                     
+          </div>         
+  </div>      
+  <div class="form-group">
+    <label for="Message">Message</label>
+    <input class="form-control" placeholder="message" [(ngModel)]="_coupon.message" name="Message" type="text" id="Message" required=""/>       
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>    
+    <input required
+           pattern="^[1-9].*"                 
+           ngModel
+           name="price"  
+           #price="ngModel"
+           id="price"
+           type="number"
+           class="form-control" 
+           placeholder="price" 
+           [(ngModel)]="_coupon.price"/>
+          <div class="alert alert-danger" *ngIf="price.touched && !price.valid">
+            <div *ngIf="price.errors.required">price is required</div>            
+            <div *ngIf="price.errors.pattern">price does not match pattern for example "1234"</div>                       
+          </div>
+  </div>
+  <div class="form-group">
+    <label for="image">Image</label>
+    <select required
+          ngModel
+          name="image"
+          #image="ngModel"
+          class="form-control" 
+          placeholder="image" 
+          [(ngModel)]="_coupon.image"                  
+          id="image">
+        <option value=""></option>
+        <option value="{{resturants}}">resturant</option>
+        <option value="{{electricity}}">electricity</option>
+        <option value="{{food}}">food</option>
+        <option value="{{health}}">health</option>
+        <option value="{{sports}}">sports</option>
+        <option value="{{camping}}">camping</option>
+        <option value="{{travelling}}">travelling</option>
+    </select>
+    <div class="alert alert-danger" *ngIf="image.touched && !image.valid">
+        <div *ngIf="image.errors.required">image is required</div>                     
+      </div>  
+  </div>
+  <div class="form-group">      
+    <button (click)="addCoupon()" class="btn btn-primary btn-lg" [disabled]="!createCoupon.valid">Add Coupon  <span class="glyphicon glyphicon-plus"></span></button>
+  </div>      
+</form>

@@ -1,0 +1,50 @@
+<h1>Get Coupon by Name</h1>
+<form #couponByName="ngForm" class="container" ng-controller="MainCtrl">
+    <div class="form-group">
+        <label for="couponName">Enter Coupon Name</label>  
+        <!-- <input class="form-control" placeholder="Coupon Name" [(ngModel)]=_name #companyName="ngModel" name="couponName" type="text" id="couponName" required=""/>         -->
+        <input required
+           pattern="^[a-zA-Z]+[a-zA-Z0-9].*"
+           minlength="1"      
+           ngModel
+           name="couponName"  
+           #couponName="ngModel"
+           id="couponName"
+           type="text"
+           class="form-control" 
+           placeholder="couponName" 
+           [(ngModel)]=_name/>
+          <div class="alert alert-danger" *ngIf="couponName.touched && !couponName.valid">
+            <div *ngIf="couponName.errors.required">Name is required</div>
+            <div *ngIf="couponName.errors.minlength">Name should be minimum {{ couponName.errors.minlength.requiredLength }} chararcters</div>
+            <div *ngIf="couponName.errors.pattern">Name does not match pattern for example "ad"</div>                       
+          </div>     
+    </div>
+    <div class="form-group">
+        <button (click)="getCouponByName()" class="btn btn-primary btn-lg" [disabled]="!couponByName.valid">Get Coupon by Name <span class="glyphicon glyphicon-plus"></span></button>        
+    </div>    
+</form>    
+
+
+<div class="table-box">
+        <table class="table">
+            <thead>
+                    <img src="{{_coupon.image}}">
+            </thead>
+            <tbody id="tbody_tr" var="_coupon">
+                <br>
+                <tr><td>Id</td><td>{{_coupon.id}}</td></tr>            
+                <tr><td>Title</td><td>{{_coupon.title}}</td></tr>
+                <tr><td>Start Date</td><td>{{_coupon.startDate | date : "dd/MM/yyyy"}}</td></tr>
+                <tr><td>End Date</td><td>{{_coupon.endDate | date : "dd/MM/yyyy"}}</td></tr>
+                <tr><td>Amount</td><td>{{_coupon.amount}}</td></tr>
+                <tr><td>Type</td><td>{{_coupon.type}}</td></tr>
+                <tr><td>Message</td><td>{{_coupon.message}}</td></tr>
+                <tr><td>Price</td><td>{{_coupon.price | currency: 'ILS'}}</td></tr>
+                <tr>
+                    <td id="icon" (click)="deleteCoupon(_coupon.id)" class="btn btn-danger btn-sm" >Delete</td>             
+                    <td id="icon" (click)="editCoupon(_coupon)" class="btn btn-primary btn-sm" routerLink="/updateCoupon">&nbsp;  Edit &nbsp;</td> 
+                </tr>            
+            </tbody>
+        </table>
+        </div>

@@ -1,0 +1,65 @@
+<div class="all-site">
+<h1>Create Company</h1>
+<br>
+<br>
+<form #createCompany="ngForm" class="container" ng-controller="MainCtrl">
+    <div class="form-group">
+        <label for="companyName">Company Name</label>        
+        <input required 
+               pattern="^[a-zA-Z]+[a-zA-Z0-9].*"
+               minlength="2"                                 
+               ngModel 
+               name="companyName" 
+               #companyName="ngModel"                 
+               id="companyName"
+               type="text"
+               class="form-control" 
+               placeholder="CompanyName" 
+               [(ngModel)]="company.compName" />                        
+        <div class="alert alert-danger" *ngIf="companyName.touched && !companyName.valid">
+            <div *ngIf="companyName.errors.required">Company name is required</div>
+            <div *ngIf="companyName.errors.minlength">Company name should be minimum {{ companyName.errors.minlength.requiredLength }} char</div>
+            <div *ngIf="companyName.errors.pattern">Company name does not match pattern for example "ed"</div>                      
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input required 
+               pattern="^[a-zA-Z0-9].*"
+               minlength="2 "                                
+               ngModel 
+               name="password" 
+               #password="ngModel"                
+               id="password"
+               type="password"
+               class="form-control" 
+               placeholder="password" 
+               [(ngModel)]="company.password" /> 
+               <div class="alert alert-danger" *ngIf="password.touched && !password.valid">
+                    <div *ngIf="password.errors.required">password is required</div>
+                    <div *ngIf="password.errors.minlength">password should be minimum {{ password.errors.minlength.requiredLength }} char</div>
+                    <div *ngIf="password.errors.pattern">password doesn't match pattern</div>                              
+                </div>            
+    </div>
+    <div class="form-group">
+        <label for="Email">E-mail</label>     
+        <input required                              
+               pattern="^[a-zA-Z]+[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$"
+               ngModel 
+               name="Email" 
+               #Email="ngModel"                
+               id="Email" 
+               class="form-control" 
+               placeholder="Email" 
+               [(ngModel)]="company.email" 
+               type="email"/>   
+               <div class="alert alert-danger" *ngIf="Email.touched && !Email.valid">
+                    <div *ngIf="Email.errors.required">email required</div>                                       
+                    <div *ngIf="Email.errors.pattern">email doesn't match pattern</div>
+                </div>                    
+    </div>
+    <div class="form-group">
+        <button (click)="addCompany()" class="btn btn-primary btn-lg" [disabled]="!createCompany.valid">Add Company  <span class="glyphicon glyphicon-plus"></span></button>        
+    </div>    
+</form>
+</div>

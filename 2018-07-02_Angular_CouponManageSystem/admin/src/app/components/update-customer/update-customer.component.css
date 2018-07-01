@@ -1,0 +1,19 @@
+h1{
+    font-size: 70pt;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 500px;
+    }
+}
+
+#CustomerId{
+    background-color: rgb(137, 192, 214);
+}

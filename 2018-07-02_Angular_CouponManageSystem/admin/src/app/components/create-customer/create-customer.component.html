@@ -1,0 +1,46 @@
+<h1>Create Customer</h1>
+<br>
+<br>
+<form #createCustomer="ngForm" class="container main-content" ng-controller="MainCtrl">
+    <div class="form-group" >
+        <label for="customerName">Name</label>       
+        <input required
+               pattern="^[a-zA-Z]+[a-zA-Z0-9].*"
+               minlength="2"      
+               ngModel
+               name="customerName"  
+               #customerName="ngModel"
+               id="customerName"
+               type="text"
+               class="form-control" 
+               placeholder="CustomerName" 
+               [(ngModel)]="customer.custName"/>
+            <div class="alert alert-danger" *ngIf="customerName.touched && !customerName.valid">
+                <div *ngIf="customerName.errors.required">customer name is required</div>
+                <div *ngIf="customerName.errors.minlength">customer name should be minimum {{ customerName.errors.minlength.requiredLength }} chararcters</div>
+                <div *ngIf="customerName.errors.pattern">customer name does not match pattern for example "ed"</div>                       
+            </div>        
+    </div>   
+    <div class="form-group">
+        <label for="password">Password</label>        
+        <input required
+               pattern="^[a-zA-Z0-9].*"
+               minlength="2"                                 
+               ngModel
+               name="password"  
+               #password="ngModel"
+               id="password"
+               type="password"
+               class="form-control" 
+               placeholder="password" 
+               [(ngModel)]="customer.password"/>
+            <div class="alert alert-danger" *ngIf="password.touched && !password.valid">
+                <div *ngIf="password.errors.required">password is required</div>
+                <div *ngIf="password.errors.minlength">password should be minimum {{ password.errors.minlength.requiredLength }} char</div>
+                <div *ngIf="password.errors.pattern">password doesn't match pattern</div>                              
+            </div>
+    </div>    
+    <div class="form-group">                   
+            <button (click)="addCustomer()" class="btn btn-success btn-lg" [disabled]="!createCustomer.valid">Add Customer&nbsp;<span class="glyphicon glyphicon-plus"></span></button>        
+    </div>    
+</form>

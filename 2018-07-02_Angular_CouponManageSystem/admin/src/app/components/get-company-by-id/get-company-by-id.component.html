@@ -1,0 +1,33 @@
+<h1>Get Company By ID</h1>
+<br>
+<br>
+<form class="container" ng-controller="MainCtrl">
+    <div class="form-group">
+        <label for="companyName">Enter Company Id</label>   
+        <input class="form-control" placeholder="Company ID" [(ngModel)]=_id #companyName="ngModel" name="ID" type="number" id="ID" required=""/>                     
+    </div>
+    <div class="form-group">
+        <button (click)="getCompanyById()" class="btn btn-primary btn-lg">Get Company  <span class="glyphicon glyphicon-plus"></span></button>        
+    </div>    
+</form>
+        
+<div class="table-box">
+    <table class="table">
+        <tbody id="tbody_tr" var="_company">
+            <br>
+            <tr><td style="font-family: 'Times New Roman', Times, serif">Id</td><td>{{_company.id}}</td></tr>            
+            <tr><td style="font-family: 'Times New Roman', Times, serif">Company Name</td><td>{{_company.compName}}</td></tr>
+            <tr><td style="font-family: 'Times New Roman', Times, serif">Password</td><td>{{_company.password}}</td></tr>
+            <tr><td style="font-family: 'Times New Roman', Times, serif">Email</td><td>{{_company.email}}</td></tr>            
+            <tr>
+                <td (click)="editCompany(_company)" class="btn btn-primary btn-sm" routerLink="/updateCompany"><span class="glyphicon glyphicon-pencil"></span>&nbsp; Edit &nbsp;</td>   
+                <td (click)="deleteCompany(_company.id)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span>&nbsp; Delete &nbsp;</td>
+            </tr>            
+        </tbody>
+    </table>
+</div>
+
+
+
+
+

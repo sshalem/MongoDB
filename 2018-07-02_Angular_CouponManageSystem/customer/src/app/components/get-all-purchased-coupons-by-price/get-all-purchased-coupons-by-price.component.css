@@ -1,0 +1,84 @@
+h1{
+    font-size: 50pt;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 400px;
+    }
+}
+
+.getall
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.inputDiv{
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}
+
+#searchBox{
+    width: 20%;
+    height: 40px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  text-align: center;    
+}
+
+mat-table{
+    background: transparent;
+}
+
+mat-header-cell{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+mat-header-row{
+    font-size: 10px;
+    font-size-adjust: initial;
+}
+.form-group button{
+    width: 100%;
+    margin: 0 auto;       
+}
+
+#rowHover:hover {
+    background-color: rgb(150, 156, 218);
+}
+
+mat-paginator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    font-size: 100%;
+    color : rgb(0, 0, 0);
+}
+
+img{
+    margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+    width: 150px;
+    height: 90px;
+}
+.results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15pt;
+}
+.alert-danger{
+    font-size: 10pt;
+}

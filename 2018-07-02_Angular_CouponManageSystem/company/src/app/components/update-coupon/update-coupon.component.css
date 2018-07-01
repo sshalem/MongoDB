@@ -1,0 +1,15 @@
+h1{
+    font-size: 30pt;
+    font-family: 'Times New Roman', Times, serif;
+    /* margin-top: 1cm; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 500px;
+    }
+}
